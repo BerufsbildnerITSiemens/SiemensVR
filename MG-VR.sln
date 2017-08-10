@@ -1,0 +1,26 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2017
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MG-VR", "MG-VR.csproj", "{A79D7F86-47B3-F934-A655-F335174E8B60}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MG-VR.Editor", "MG-VR.Editor.csproj", "{E20213C1-F6DB-AE3B-69B7-482DB6F26F29}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{A79D7F86-47B3-F934-A655-F335174E8B60}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A79D7F86-47B3-F934-A655-F335174E8B60}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A79D7F86-47B3-F934-A655-F335174E8B60}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A79D7F86-47B3-F934-A655-F335174E8B60}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E20213C1-F6DB-AE3B-69B7-482DB6F26F29}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E20213C1-F6DB-AE3B-69B7-482DB6F26F29}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E20213C1-F6DB-AE3B-69B7-482DB6F26F29}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E20213C1-F6DB-AE3B-69B7-482DB6F26F29}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

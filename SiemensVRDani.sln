@@ -1,0 +1,26 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2017
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SiemensVRDani", "SiemensVRDani.csproj", "{8922699D-41A3-5025-D363-4BBC2EF2E64D}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SiemensVRDani.Editor", "SiemensVRDani.Editor.csproj", "{4123F168-F552-07F4-B0AA-E5872DF987CD}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{8922699D-41A3-5025-D363-4BBC2EF2E64D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8922699D-41A3-5025-D363-4BBC2EF2E64D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8922699D-41A3-5025-D363-4BBC2EF2E64D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8922699D-41A3-5025-D363-4BBC2EF2E64D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{4123F168-F552-07F4-B0AA-E5872DF987CD}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4123F168-F552-07F4-B0AA-E5872DF987CD}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4123F168-F552-07F4-B0AA-E5872DF987CD}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4123F168-F552-07F4-B0AA-E5872DF987CD}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
