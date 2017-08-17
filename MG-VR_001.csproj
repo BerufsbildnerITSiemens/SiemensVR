@@ -117,13 +117,17 @@
     <Compile Include="Assets\Scripts\Tutorial\HelpScreen\VRTopic.cs" />
     <Compile Include="Assets\Scripts\Tutorial\ScreenHoverBehaviour.cs" />
     <Compile Include="Assets\Scripts\Tutorial\Tutorial\ClockTutorial.cs" />
+    <Compile Include="Assets\Scripts\Tutorial\Tutorial\GrabTutorial.cs" />
     <Compile Include="Assets\Scripts\Tutorial\Tutorial\LaserTutorial.cs" />
     <Compile Include="Assets\Scripts\Tutorial\Tutorial\LightTutorial.cs" />
     <Compile Include="Assets\Scripts\Tutorial\Tutorial\LookAtPlayer.cs" />
+    <Compile Include="Assets\Scripts\Tutorial\Tutorial\ThrowObject.cs" />
     <Compile Include="Assets\Scripts\Tutorial\Tutorial\TutorialInteractable.cs" />
     <Compile Include="Assets\Scripts\Tutorial\Tutorial\TutorialSection.cs" />
     <Compile Include="Assets\Scripts\Tutorial\Tutorial\TutorialTask.cs" />
     <Compile Include="Assets\Scripts\UI Scripts\AutoScroll.cs" />
+    <Compile Include="Assets\Scripts\World Interactables\AddCD.cs" />
+    <Compile Include="Assets\Scripts\World Interactables\CD.cs" />
     <Compile Include="Assets\Scripts\World Interactables\DoorCardReader.cs" />
     <Compile Include="Assets\Scripts\World Interactables\Fire.cs" />
     <Compile Include="Assets\Scripts\World Interactables\FireExtinguisher.cs" />
@@ -132,7 +136,9 @@
     <Compile Include="Assets\Scripts\World Interactables\Keycard.cs" />
     <Compile Include="Assets\Scripts\World Interactables\KeycardReader.cs" />
     <Compile Include="Assets\Scripts\World Interactables\Lighter.cs" />
+    <Compile Include="Assets\Scripts\World Interactables\PlayMusic.cs" />
     <Compile Include="Assets\Scripts\World Interactables\Print.cs" />
+    <Compile Include="Assets\Scripts\World Interactables\Recognize_cd.cs" />
     <Compile Include="Assets\Scripts\World Interactables\SecurityCamera.cs" />
     <Compile Include="Assets\Scripts\World Interactables\VRButton.cs" />
     <Compile Include="Assets\Scripts\World Interactables\VRClock.cs" />

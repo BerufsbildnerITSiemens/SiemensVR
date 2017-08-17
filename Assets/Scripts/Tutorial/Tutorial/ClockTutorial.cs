@@ -2,6 +2,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using System.Diagnostics;
 
 public class ClockTutorial : TutorialSection
 {
@@ -12,8 +13,14 @@ public class ClockTutorial : TutorialSection
         timeScript = GameObject.FindObjectOfType<VRTime>();
         base.Start();
     }
+
     protected override void TaskNeedsVerification()
     {
+        // Get call stack
+        StackTrace stackTrace = new StackTrace();
+
+        // Get calling method name
+        Console.WriteLine(stackTrace.GetFrame(1).GetMethod().Name);
         switch (activeTask.eventIndex)
         {
             case 0:

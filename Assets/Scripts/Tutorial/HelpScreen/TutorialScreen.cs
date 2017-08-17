@@ -51,6 +51,7 @@ public class TutorialScreen : MonoBehaviour
     // Use this for initialization
     void Start()
     {
+
         InteractWithHelpScreen.interactingHelpScreen = this;
         //instantiate topics
         allVRTopics = new List<VRTopic>();

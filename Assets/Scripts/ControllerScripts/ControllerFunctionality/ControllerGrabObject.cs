@@ -8,12 +8,11 @@ using UnityEngine;
 public class ControllerGrabObject : ControllerFunctionality
 {
     JointBreakSensor jointBreakSensor; //TODO
+    private ThrowObject Cube;
 
     protected override void Awake()
     {
         info = new GrabObjectInformation();
-
-
         base.Awake();
     }
 
@@ -64,6 +63,19 @@ public class ControllerGrabObject : ControllerFunctionality
         {
             var joint = AddFixedJoint(info);
             joint.connectedBody = grabObjInfo.objectInHand.GetComponent<Rigidbody>();
+        }
+        if(grabObjInfo.objectInHand.gameObject.name == "Cube")
+        {
+            Cube = grabObjInfo.objectInHand.GetComponent<ThrowObject>();
+            if (Cube)
+            {
+                if (Cube.taskCompleted[0] != null)
+                {
+                    {
+                        Cube.taskCompleted[0].Invoke();
+                    }
+                }
+            }
         }
     }
 

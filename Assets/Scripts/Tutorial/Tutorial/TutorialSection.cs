@@ -10,6 +10,7 @@ public abstract class TutorialSection : MonoBehaviour
     [Header("Tutorial Stuff")]
     public GameObject objectToTeachPrefab;
     public bool NoObjectToTeach = false;
+    public bool ObjectToTeachHover = true;
     public Transform objectSpawnPoint;
     public GameObject screenPrefab;
     public Transform screenSpawnPoint;
@@ -18,6 +19,8 @@ public abstract class TutorialSection : MonoBehaviour
     [Header("UI Stuff")]
     [HideInInspector]
     public Text title;
+    [HideInInspector]
+    public GameObject objectToTeach;
     [HideInInspector]
     public Text description;
     [HideInInspector]
@@ -30,6 +33,9 @@ public abstract class TutorialSection : MonoBehaviour
     protected TutorialTask activeTask;
 
     protected TutorialInteractable instanceOfObject;
+
+    [HideInInspector]
+    public bool tutorialStarted = false;
 
     // Use this for initialization
     protected virtual void Start()
@@ -56,8 +62,11 @@ public abstract class TutorialSection : MonoBehaviour
         SteamVR_Camera cam = other.GetComponent<SteamVR_Camera>();
         if (cam)
         {
-            StartTutorial();
-            GetComponent<Collider>().enabled = false; //Dont start tutorial anymore
+            if (!tutorialStarted)
+            {
+                StartTutorial();
+                tutorialStarted = true; //Dont start tutorial anymore
+            }
         }
 
     }
@@ -70,21 +79,24 @@ public abstract class TutorialSection : MonoBehaviour
         GameObject go;
         if (!NoObjectToTeach)
         {
-
             go = Instantiate(objectToTeachPrefab);
             go.transform.SetParent(transform, true);
             go.transform.position = objectSpawnPoint.position;
             go.transform.rotation = objectSpawnPoint.rotation;
             instanceOfObject = go.GetComponent<TutorialInteractable>();
+            objectToTeach = go;
             if (instanceOfObject == null)
             {
                 instanceOfObject = go.GetComponentInChildren<TutorialInteractable>();
                 if (instanceOfObject == null)
                 {
-                    throw new System.Exception("ObjectToTeach does not have the TuztorialIntertactable Interface");
+                    throw new System.Exception("ObjectToTeach does not have the TutorialIntertactable Interface");
                 }
             }
-            objectHover = go.GetComponentInChildren<ScreenHoverBehaviour>();
+            if (ObjectToTeachHover)
+            {
+                objectHover = go.GetComponentInChildren<ScreenHoverBehaviour>();
+            }
         }
 
 
@@ -138,8 +150,9 @@ public abstract class TutorialSection : MonoBehaviour
     [ContextMenu("finish")]
     public void FinishTutorial()
     {
+        tutorialStarted = false;
         screenHover.FlyAwayAndDestroy();
-        if (!NoObjectToTeach)
+        if (!NoObjectToTeach && ObjectToTeachHover)
         {
             objectHover.FlyAwayAndDestroy();
         }
