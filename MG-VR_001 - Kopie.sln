@@ -1,0 +1,26 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2017
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MG-VR_001 - Kopie", "MG-VR_001 - Kopie.csproj", "{3473CA5C-90D0-A54F-496F-AF1AB19F5ACE}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MG-VR_001 - Kopie.Editor", "MG-VR_001 - Kopie.Editor.csproj", "{9A450ED4-AE29-D9EB-95DA-407F29CC5243}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{3473CA5C-90D0-A54F-496F-AF1AB19F5ACE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3473CA5C-90D0-A54F-496F-AF1AB19F5ACE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3473CA5C-90D0-A54F-496F-AF1AB19F5ACE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3473CA5C-90D0-A54F-496F-AF1AB19F5ACE}.Release|Any CPU.Build.0 = Release|Any CPU
+		{9A450ED4-AE29-D9EB-95DA-407F29CC5243}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9A450ED4-AE29-D9EB-95DA-407F29CC5243}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9A450ED4-AE29-D9EB-95DA-407F29CC5243}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9A450ED4-AE29-D9EB-95DA-407F29CC5243}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

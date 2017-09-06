@@ -8,7 +8,11 @@ public class Print : MonoBehaviour
     public VRSensor sensor;
     public Transform output;
     public List<GameObject> inPrinter;
+    [HideInInspector]
     public bool controllerInPrinter = false;
+    [HideInInspector]
+    public bool cameraInPrinter = false;
+
 
     // Use this for initialization
     void Start()
@@ -35,26 +39,33 @@ public class Print : MonoBehaviour
 
     private void triggerEnter(Collider collider, VRSensor sensor)
     {
-        if(collider.gameObject.transform.name == "Controller (left)" || collider.gameObject.transform.name == "Controller (right)")
-        {
-            controllerInPrinter = true;
-        }
-        else
+        if (collider.gameObject.transform.name != "Controller (left)" && collider.gameObject.transform.name != "Controller (right)" && collider.gameObject.transform.name != "Camera (eye)")
         {
             inPrinter.Add(collider.gameObject);
         }
-        
+        else if (collider.gameObject.transform.name == "Controller (left)" || collider.gameObject.transform.name == "Controller (right)")
+        {
+            controllerInPrinter = true;
+        }
+        else if (collider.gameObject.transform.name == "Camera (eye)")
+        {
+            cameraInPrinter = true;
+        }
     }
 
     private void triggerLeave(Collider collider, VRSensor sensor)
     {
-        if(collider.gameObject.transform.name == "Controller (left)" || collider.transform.name == "Controller (right)")
+        if (collider.gameObject.transform.name != "Controller (left)" && collider.gameObject.transform.name != "Controller (right)" && collider.gameObject.transform.name != "Camera (eye)")
+        {
+            inPrinter.Remove(collider.gameObject);
+        }
+        else if (collider.gameObject.transform.name == "Controller (left)" || collider.gameObject.transform.name == "Controller (right)")
         {
             controllerInPrinter = false;
         }
-        else
+        else if (collider.gameObject.transform.name == "Camera (eye)")
         {
-            inPrinter.Remove(collider.gameObject);
+            cameraInPrinter = false;
         }
     }
 

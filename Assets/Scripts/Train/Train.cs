@@ -18,15 +18,25 @@ public class Train : MonoBehaviour
     public float doorSpeed = 1f;
     private bool doorsOpen = false;
     private bool trainDepart = false;
+    private bool start = false;
+    public VRSensor Trigger;
 
     public VRSensor playerLeft;
     // Use this for initialization
     void Start()
     {
         currentSpeed = fullSpeed;
-        StartCoroutine(Drive(breakPoint));
-
         playerLeft.triggerEnter += StationSensor;
+        Trigger.triggerEnter += Start;
+    }
+
+    private void Start(Collider other, VRSensor sensor)
+    {
+        if (!start)
+        {
+            player.SetParent(this.transform, true);
+            StartCoroutine(Drive(breakPoint));
+        }
     }
 
     private void StationSensor(Collider other, VRSensor sensor)

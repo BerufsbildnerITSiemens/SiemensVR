@@ -103,9 +103,12 @@
     <Compile Include="Assets\Scripts\HelperScripts\StreetLight.cs" />
     <Compile Include="Assets\Scripts\HelperScripts\VRSensor.cs" />
     <Compile Include="Assets\Scripts\HelperScripts\VRTime.cs" />
+    <Compile Include="Assets\Scripts\LevelLoad\LaserController.cs" />
     <Compile Include="Assets\Scripts\LevelLoad\LoadGame.cs" />
     <Compile Include="Assets\Scripts\LevelLoad\SessionController.cs" />
     <Compile Include="Assets\Scripts\LevelLoad\SessionSettings.cs" />
+    <Compile Include="Assets\Scripts\LevelLoad\TeleportScene.cs" />
+    <Compile Include="Assets\Scripts\TeleportationPoint.cs" />
     <Compile Include="Assets\Scripts\Train\Train.cs" />
     <Compile Include="Assets\Scripts\Tutorial\HelpScreen\GiveScreenSpawner.cs" />
     <Compile Include="Assets\Scripts\Tutorial\HelpScreen\InteractWithHelpScreen.cs" />
@@ -138,8 +141,9 @@
     <Compile Include="Assets\Scripts\World Interactables\Lighter.cs" />
     <Compile Include="Assets\Scripts\World Interactables\PlayMusic.cs" />
     <Compile Include="Assets\Scripts\World Interactables\Print.cs" />
-    <Compile Include="Assets\Scripts\World Interactables\Recognize_cd.cs" />
     <Compile Include="Assets\Scripts\World Interactables\SecurityCamera.cs" />
+    <Compile Include="Assets\Scripts\World Interactables\TV.cs" />
+    <Compile Include="Assets\Scripts\World Interactables\TV_Speaker.cs" />
     <Compile Include="Assets\Scripts\World Interactables\VRButton.cs" />
     <Compile Include="Assets\Scripts\World Interactables\VRClock.cs" />
     <Compile Include="Assets\Scripts\World Interactables\VRComputer.cs" />
