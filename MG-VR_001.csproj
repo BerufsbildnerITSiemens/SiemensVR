@@ -107,8 +107,9 @@
     <Compile Include="Assets\Scripts\LevelLoad\LoadGame.cs" />
     <Compile Include="Assets\Scripts\LevelLoad\SessionController.cs" />
     <Compile Include="Assets\Scripts\LevelLoad\SessionSettings.cs" />
-    <Compile Include="Assets\Scripts\LevelLoad\TeleportScene.cs" />
-    <Compile Include="Assets\Scripts\TeleportationPoint.cs" />
+    <Compile Include="Assets\Scripts\LevelLoad\StartRoom.cs" />
+    <Compile Include="Assets\Scripts\Teleport\TeleportScene.cs" />
+    <Compile Include="Assets\Scripts\Teleport\TeleportationPoint.cs" />
     <Compile Include="Assets\Scripts\Train\Train.cs" />
     <Compile Include="Assets\Scripts\Tutorial\HelpScreen\GiveScreenSpawner.cs" />
     <Compile Include="Assets\Scripts\Tutorial\HelpScreen\InteractWithHelpScreen.cs" />
